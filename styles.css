@@ -3,10 +3,46 @@
     font-family: 'League Spartan', sans-serif;;
     text-align: center;
     font-size: 20px;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
 }
 img{
-    width: 100%;
+    width: 70%;
 }
 footer{
     padding-top: 50PX;
+}
+
+.header{
+    position: fixed;
+    top:0; left: 0; right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background:#fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+
+}
+
+.header .logo{
+    width: 200px;
+}
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.7rem;
+    color:var(--main-color);
+    transition: border 0.3s ease;
+    position: relative;
+}
+.header .navbar a:hover{
+    border-bottom: 2px solid var(--main-color); 
+
 }

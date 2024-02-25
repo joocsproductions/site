@@ -10,6 +10,17 @@
     text-transform: capitalize;
     transition: all .2s linear;
 }
+
+.section{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    }
+
 img{
     width: 70%;
 }
@@ -44,5 +55,4 @@ footer{
 }
 .header .navbar a:hover{
     border-bottom: 2px solid var(--main-color); 
-
 }

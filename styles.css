@@ -7,8 +7,8 @@
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: all .2s linear;
+    scroll-behavior: smooth;
 }
 
 ul,li{
@@ -43,19 +43,38 @@ footer{
     background:#fff;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     padding: 1em;
-    /* padding-left: 3em;
-    padding-right: 3em; */
+    padding-left: 3em;
+    padding-right: 3em;
 
 }
 
 .header .logo{
-    width: clamp(6.25rem, 0rem + 12.5vw, 12.5rem);
+    width: clamp(6.25rem, 0rem + 12.5vw, 9rem);
+}
+
+.header .logo:hover{
+    width: clamp(6.25rem, 0rem + 12.5vw, 10rem);
+}
+
+.chatwus{
+    width: 150px;
+    color: black;
+    height: 45px;
+    background-color: #e6e6e6;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px rgb(141, 141, 141);
 }
 
 .navbar{
     display: flex;
     justify-content: space-around;
-    gap: 0.4rem;
+    gap: 1rem;
+}
+
+.navbar a{
+    font-size: 20px;
 }
 
 .header .navbar a{

@@ -135,8 +135,7 @@ img {
 }
 
 
-.btn-teal,
-.bg-teal {
+.btn-teal, .bg-teal{
     background-color: var(--teal-500);
     color: white;
 }

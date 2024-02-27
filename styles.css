@@ -73,7 +73,19 @@ img {
     width: clamp(6.25rem, 0rem + 12.5vw, 10rem);
 }
 
+/* NavBar Bootstrap */
+.navbar-toggler{
+    display: none;
+}
 
+.pc .navbar-pc{
+    display: flex;
+    margin: auto;
+}
+
+.nav-item{
+    padding-right: 20px ;
+}
 
 .navbar {
     display: flex;
@@ -86,7 +98,7 @@ img {
     font-size: 20px;
 } */
 .header .navbar a {
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 /* .header .navbar a:hover {
@@ -224,9 +236,21 @@ footer {
 
 /*---------responsive----------------*/
 
-/* @media screen and (max-width:800px) {
+@media screen and (max-width:800px){
 
-    .hide {
+    .pc{
+        display: none;
+    }
+
+    #chat{
+        display:none;
+    }
+
+    .navbar-toggler{
+        display: initial;
+    }
+
+    /* .hide {
         display: none;
     }
 
@@ -247,6 +271,5 @@ footer {
         display: block;
         background: none;
         border-radius: 5px;
-    }
-
-} */
+    } */
+}

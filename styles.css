@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap');
+
+:root {
+    --teal-500: #12d47a;
+  }
+
 *{
     font-family: 'League Spartan', sans-serif;;
     text-align: center;
@@ -9,17 +14,27 @@
     text-decoration: none;
     transition: all .2s linear;
     scroll-behavior: smooth;
+    max-width: 100%;
 }
+
+a:-webkit-any-link {
+    text-decoration: none;
+  }
 
 ul,li{
     list-style: none;
 }
 
+.title{
+    width: 100%;
+    padding: 0, 48px, 0, 28px;
+}
+
 .section{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    padding-top: 120px ;
+    height: 95vh;
     width: 100vw;
+    max-width: 100%;
     align-items: center;
     justify-content: center;
     font-size: 70px;
@@ -28,9 +43,6 @@ ul,li{
 img{
     width: 70%;
 }
-footer{
-    padding-top: 50PX;
-}
 
 .header{
     position: fixed;
@@ -38,7 +50,6 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 0.5rem;
     z-index: 1000;
     background:#fff;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
@@ -56,16 +67,7 @@ footer{
     width: clamp(6.25rem, 0rem + 12.5vw, 10rem);
 }
 
-.chatwus{
-    width: 150px;
-    color: black;
-    height: 45px;
-    background-color: #e6e6e6;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 0px 0px 4px rgb(141, 141, 141);
-}
+
 
 .navbar{
     display: flex;
@@ -78,47 +80,149 @@ footer{
 }
 
 .header .navbar a{
-    /* margin:0 0.5rem; */
     font-size: clamp(clamp(1rem, 0.3rem + 1.4vw, 1.7rem));
     color:var(--main-color);
     transition: border 0.3s ease;
     position: relative;
-    border-radius: 5px;
+    border-radius: 8px;
     background: white;
-    /*added to make the effect  of hovering on active link*/
     z-index: 1;
     overflow: hidden;
     transition: 0.5s;
 }
+
 .header .navbar a:hover{
-    border-bottom: 2px solid var(--main-color); 
+    border-bottom: 3px solid var(--main-color); 
 }
 
 #nav-button{
     display: none;
 }
 
-.navbar a span{  /*added to make the effect  of hovering on active link*/
-    position: absolute;
-    top:0;
-    left:0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background: #b0b0b0;
-    border-radius: inherit;
-    transform: rotate(160deg);
-    transform-origin: right;
-    transition: 0.5s;
+
+
+.navbar a:hover{
+    font-size: 25px;
+    text-shadow: 0 0 1px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
-.navbar a:hover{ /*added to make the effect  of hovering on active link*/
+
+
+#home{
+    display: flex;
+}
+
+
+/*---------PLANES----------------*/
+
+#services{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.btn-teal, .bg-teal{
+    background-color: var(--teal-500);
     color: white;
+  }
+
+.grow-on-hover {
+    transition: transform 0.5s;
 }
 
-.navbar a:hover span{ /*added to make the effect  of hovering on active link*/
-    transform: rotate(0deg);
+.grow-on-hover:hover {
+    transform: scale(1.1);
 }
+  
+.rounded-lg{
+border-radius: 1em !important;
+}
+
+.text-small{
+    font-size: 0.9rem;
+}
+
+.custom-separator{
+    width: 5rem;
+    height: 6px;
+    border-radius: 1rem;
+}
+
+.text-uppercase{
+    letter-spacing: 0.2em;
+}
+
+/*---------/PLANES----------------*/
+
+
+
+/*---------CONTACT **PROVISIONAL**----------------*/
+
+#contact{
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  #titulo-contacto p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1B1B1F;
+    font-size: 5.4vw;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    line-height: 70px;
+  
+  }
+  
+  #titulo-contacto p span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5.5vw;
+    color: #1B1B1F;
+    text-decoration-line:overline;
+    font-size: 2.7vw;
+    font-family: 'Public Sans', sans-serif;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    height:fit-content;
+    width: 100vw;
+  }
+  
+  .buttons a {
+    text-decoration: none;
+    font-size: 58px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background: #12d47a;
+    color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+  }
+  
+  .buttons a:hover {
+    transform: scale(1.2);
+  }
+
+/*---------/CONTACT----------------*/
+
+/*---------FOOTER----------------*/
+footer{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+}
+/*---------/FOOTER----------------*/
+
 
 /*---------responsive----------------*/
 

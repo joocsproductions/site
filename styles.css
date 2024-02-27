@@ -42,6 +42,7 @@ li {
     align-items: center;
     justify-content: center;
     font-size: 70px;
+    overflow: hidden;
 }
 
 img {
@@ -122,6 +123,14 @@ img {
 #home {
     display: flex;
 }
+
+/*---------CARRUSEL IMAGES----------------*/
+
+.carousel-item img{
+    height: 80vh;
+}
+
+
 
 
 /*---------PLANES----------------*/

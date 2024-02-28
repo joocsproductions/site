@@ -15,8 +15,7 @@
     <script src="https://kit.fontawesome.com/eba9ab3518.js" crossorigin="anonymous"></script>
     <!-- Styles Css -->
     <link rel="stylesheet" href="styles.css">
-
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>JOOCS Productions</title>
     <meta name="description"
@@ -72,19 +71,34 @@
         </nav>
 
     </header>
-
     <section class="section" id="home">
-        <div class="row" id="content">
-            <div class="col" id="home-text">
-                <h2>¿Listo para revolucionar tu presencia digital? <br>¡Invierte en tu éxito ahora y trabajemos juntos para desatar el potencial de tu marca</h2>  
+        <div class="content">
+            <div class="main-content">
+                <h1 data-aos="fade-right" data-aos-duration="2000">DE EMPRENDENDORES</h1>
+                <h2 data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">PARA EMPRENDENDORES</h2>
+                <h4 data-aos="fade-right" data-aos-duration="2000" data-aos-delay="400">subtitle</h4>
+                <p data-aos="flip-down" data-aos-duration="2000" data-aos-delay="600">Let the attitude have the edge in your Nike Air Max Plus, a Tuned Air experience that offers premium stability and unbelievable cushioning Featuring the OG's</p>
+                <div class="order">
+                    <button data-aos="zoom-in-left" data-aos-duration="2000" data-aos-delay="800">COTIZA</button>
+                </div>
             </div>
-            <div class="col-md-6" id="logo">
-                <img src="images/complete-logo.png" alt="JOOCS LOGO">
+            <div id="logo">
+                <img src="images/complete-logo.png" alt="JOOCS LOGO" data-aos="zoom-in" data-aos-duration="2000">
             </div>
         </div>
-        </div>
-        <div class="image-slider"> </div>
     </section>
+    <!-- <section class="section" id="home"> -->
+        <!-- <div class="row" id="content"> -->
+            <!-- <div class="col" id="home-text"> -->
+                <!-- <h2>¿Listo para revolucionar tu presencia digital? <br>¡Invierte en tu éxito ahora y trabajemos juntos para desatar el potencial de tu marca</h2>   -->
+            <!-- </div> -->
+            <!-- <div class="col-md-6" id="logo"> -->
+                <!-- <img src="images/complete-logo.png" alt="JOOCS LOGO"> -->
+            <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- <div class="image-slider"> </div> -->
+    <!-- </section> -->
     <section class="section" id="about">
         <div class="title">
             <h2>About us</h2>
@@ -206,6 +220,12 @@
         crossorigin="anonymous"></script>
     <!-- Js -->
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:1
+      });
+    </script>
 </body>
 
 </html>

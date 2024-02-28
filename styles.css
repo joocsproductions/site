@@ -64,7 +64,7 @@ li {
 }
 
 .header .logo {
-    width: clamp(6.25rem, 0rem + 12.5vw, 9rem);
+    width: clamp(6.25rem, 0rem + 12.5vw, 5rem);
 }
 
 .header .logo:hover {

@@ -22,6 +22,7 @@
 
 body{
     background-color: #070725;
+    color: #ffffff;
 }
 a:-webkit-any-link {
     text-decoration: none;
@@ -43,43 +44,30 @@ li {
     width: 100vw;
     max-width: 100%;
     align-items: center;
+    text-align: center;
     justify-content: center;
     font-size: 70px;
     overflow: hidden;
 }
 
-.navbar navbar-black bg-white fixed-top{
-    padding: 0px;
-}
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-    background: #fff;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-    padding-left: 3em;
-    padding-right: 3em;
-
-}
 
 .header .logo {
-    width: clamp(6.25rem, 0rem + 12.5vw, 8.5rem);
+    width: clamp(6.25rem, 0rem + 12.5vw, 9.5rem);
+
 }
 
 .header .logo:hover {
-    width: clamp(6.25rem, 0rem + 12.5vw, 10rem);
+    width: clamp(6.25rem, 0rem + 10.5vw, 10.5rem);
+    
 }
 
 .container-fluid{
+    padding: 20px;
     padding-left: 3em;
     padding-right: 3em;
+    background-color: #08082c;
 }
-/* NavBar Bootstrap */
+
 .navbar-toggler{
     display: none;
 }
@@ -109,7 +97,7 @@ li {
 }
 
 .navbar a:hover {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .offcanvas-body{
@@ -119,22 +107,63 @@ li {
 
 /*---------HOME----------------*/
 
+#home{
+    padding-top: 30px;
+}
 #content{
     display: flex;
-    flex-direction: row;
+    align-items: center;
 }
 
-#logo{
+#images{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     width: 50%;
-    margin-right: 5vw;
+    position: relative;
+    padding-top: 15vh;
 }
 
-#logo img{
-    width: 80%;
-    animation: zoom 5s infinite;
+#vip{
+    height: 50vh;
+    width: 600px;
+    padding-left: 50px;
+    
 }
+
+#spc{
+    height: 50vh;
+    width: 200px;
+    padding-top: 30%;
+}
+
+
+#foods{
+    width: 30%;
+    height: 30vh;
+}
+
+#foods img{
+    position: absolute;
+    top: 450px;
+    left: 0;
+    width: auto; 
+    height: 300px;
+}
+
+#spd{
+    width: 50%;
+    height: 30vh;
+}
+
+#spd img{
+    position: absolute;
+    top: 400px;
+    left: 400px;
+    width: auto; 
+    height: 300px;
+}
+
+
 
 @keyframes zoom {
   0% {
@@ -297,6 +326,7 @@ footer {
 
 .main-content h1{
     font-size: clamp(2rem, 1rem + 5vw, 3rem);
+    margin: 0;
 }
 
 .main-content h2{

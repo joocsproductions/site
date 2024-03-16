@@ -289,6 +289,66 @@ li {
 
 /*---------/CONTACT----------------*/
 
+/*---------/CHOOSE/----------------*/
+#cost p{
+    padding: 25px;
+    line-height: 1.2rem;
+}
+
+#coins{
+    width: 50%;
+    height: 50%;
+    animation: movement 1s linear alternate-reverse ;
+}
+
+#website {
+    font-size: 2.5rem;
+    color: #fa6b37;
+    animation: blink 2s linear infinite alternate-reverse; 
+
+@keyframes blink {
+    0% {
+        text-shadow: 0px 0px 4px #fa6b37;
+    }
+    20% {
+        text-shadow: 0px 0px 4px #fa6b37;
+    }
+    30% {
+        text-shadow: 0px 0px 6px #fa6b37;
+    }
+    40% {
+        text-shadow: 0px 0px 8px #fa6b37;
+    }
+    50% {
+        text-shadow: 0px 0px 10px #fa6b37;
+    }
+    60% {
+        text-shadow: 0px 0px 12px #fa6b37;
+    }
+    70% {
+        text-shadow: 0px 0px 14px #fa6b37;
+    }
+    80% {
+        text-shadow: 0px 0px 16px #fa6b37;
+    }
+    90% {
+        text-shadow: 0px 0px 18px #fa6b37;
+    }
+    100% {
+        text-shadow: 0px 0px 20px #fa6b37;
+    }
+}
+
+@keyframes movement {
+    0% {
+        transform: translateX(5px);
+    }
+    20%{
+        transform: translateX(-5px);
+    }
+}
+
+
 /*---------FOOTER----------------*/
 footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -310,7 +370,7 @@ footer {
         display:none;
     }
 
-    .navbar-toggler{
+    #navbar-toggler{
         display: initial;
     }
 }

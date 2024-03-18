@@ -118,24 +118,25 @@
             <div class="main-content">
                 <h1 data-aos="fade-right" data-aos-duration="2000">DE EMPRENDEDORES</h1>
                 <h2 data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">PARA EMPRENDEDORES</h2>
-                <p data-aos="flip-down" data-aos-duration="2000" data-aos-delay="600">
-                    Let the attitude have the edge in your Nike Air Max Plus, 
-                    a Tuned Air experience that offers premium stability and unbelievable
-                    cushioning Featuring the OG's
-                </p>
+
+
+                <p data-aos="flip-down" data-aos-duration="2000" data-aos-delay="600">Lleva tu marca o negocio al siguiente nivel. Descubre el costo estimado de tu página o aplicacion web con nuestra breve encuesta, Juntos podemos hacer realidad tus objetivos digitales!</p>
                 <div id="buttonc">
-                    <button data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600" class='glowing-btn'>
-                        <span class='glowing-txt'>CON<span class='faulty-letter'>TAC</span>TANOS</span>
-                    </button>
+                    <button data-aos="flip-right" data-aos-duration="2000" data-aos-delay="600" class='glowing-btn'>
+                    <span class='glowing-txt'>CONTAC<span></span>TANOS</span></button>
+
                 </div>
             </div>
             <div id="images">
                 <div id="vip">
                     <img data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200" src="images/PC VIP.png" alt="">
                 </div>
+
                 <div id="spc">
                     <!-- IMG -->
                 </div>
+
+
                 <div id="foods">
                     <img data-aos="fade-up" data-aos-duration="1800" data-aos-delay="400" src="images/FOOCSCELF.png" alt="">
                 </div>
@@ -158,12 +159,12 @@
         <div class="title">
             <h2>Portfolio</h2>
         </div>
-        <div id="fixedWidth">
+        <div id="carrousel">
             <div class="item"><img src="images/PC VIP.png" alt=""></div>
             <div class="item"><img src="images/asian_pantallas.jpeg" alt=""></div>
             <div class="item"><img src="images/burger_pantallas.jpeg" alt=""></div>
-            <div class="item"><h1>4</h1></div>
-            <div class="item"><h1>5</h1></div>
+            <div class="item"><img src="images/asian_pantallas.jpeg" alt=""></div>
+            <div class="item"><img src="images/PC VIP.png" alt=""></div>
         </div>
     </section>
 
@@ -277,7 +278,7 @@
         &COPY; 2024 JOOCS Productions. Todos los derechos reservados.
     </footer>
 
-    <!-- Bootstrap JavaScript Libraries -->
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
@@ -287,19 +288,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     
     <script>
-        let slider = tns({
-            "container": "#fixedWidth",
-            "slideBy": "1",
-            "speed": 400,
-            "nav": false,
-            "mouseDrag": true,
-            autoplay: true,
-            controls: false,
-            aoutoplayButtonOutput: false,
-        });
-    </script>
-    <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
-    <!-- Js -->
+
+
+    let slider = tns({
+        "container": "#carrousel",
+        "slideBy": "1",
+        "speed": 800,
+        "nav": false,
+        "mouseDrag": true,
+        autoplay: true,  
+        "autoplayTimeout": 2500,
+        "swipeAngle": false,      
+
+    });
+      </script>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({

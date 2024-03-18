@@ -317,6 +317,8 @@ li {
     font-size: 2.5rem;
     color: #fa6b37;
     animation: blink 2s linear infinite alternate-reverse; 
+}
+
 
 @keyframes blink {
     0% {

@@ -283,10 +283,31 @@ ul, li {
 /*---------/PLANES----------------*/
 #images-carrusel{
     display: flex;
-    flex-direction: row;
-    height: 500px;
-    width: 500px;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
+
+#container-images-carrusel{
+    display: flex;
+}
+
+#left-images-carrusel, #right-images-carrusel{
+    min-width: 49%;
+}
+
+#right-images-carrusel{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap:2rem;
+}
+
+#right-carrusel{
+    max-width: 50%;
+}
+
+
+
 
 /*---------CONTACT **PROVISIONAL**----------------*/
 
